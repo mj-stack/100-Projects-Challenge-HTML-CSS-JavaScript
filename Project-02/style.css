@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #00008bcb;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loader {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+
+.loading-one {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+  animation: load 0.8s ease infinite;
+  animation-delay: 0.3s;
+}
+
+.loading-two {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+  animation: load 0.8s ease infinite;
+  animation-delay: 0.4s;
+}
+
+.loading-three {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+  animation: load 0.8s ease infinite;
+  animation-delay: 0.5s;
+}
+
+.loading-four {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+  animation: load 0.8s ease infinite;
+}
+
+@keyframes load {
+  0% {
+    height: 30px;
+    width: 30px;
+  }
+  50% {
+    height: 20px;
+    width: 20px;
+  }
+}
