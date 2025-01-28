@@ -1,0 +1,1 @@
+This project includes images with hover effects that display smooth transitions, enhancing the user experience.
