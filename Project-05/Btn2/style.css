@@ -1,0 +1,61 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: gray;
+}
+
+.container a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.container a::before {
+  content: 'Hover Me';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 1s;
+}
+
+.container a::after { 
+  content: 'Hover Me';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 1s;
+  transition-delay: 0.25s;
+}
+
+.container a:hover::after,
+.container a:hover::before {
+  transform: rotateX(0deg);
+}
